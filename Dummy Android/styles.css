@@ -1,0 +1,307 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .mobile-frame {
+    width: 360px;
+    height: 640px;
+    background-color: #000;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .bezel {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 4px solid #444;
+    border-radius: 20px;
+  }
+  
+  .screen {
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .navigation-buttons {
+    position: absolute;
+    width: 100%;
+    height:50px;
+    background-color:#000;
+    display: flex;
+    top: 93%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    font-size: 24px;
+  }
+
+  .nav-button1{
+    width: 30px;
+    height: 40px;
+    margin-left:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:white
+  }
+  .nav-button2{
+    width: 30px;
+    height: 40px;
+    margin-left:15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:white
+  }
+  .nav-button3{
+    width: 30px;
+    height: 40px;
+    margin-left:15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:white
+  }
+  .app {
+      display:none;
+      width: 100%;
+      height: 160px;
+      margin-top:310px;
+  }
+  p{
+      color:rgb(209, 207, 207);
+      margin-top: 100%;
+      margin-left: 5%;
+      display: block;
+  }
+  .gallery {
+  width: 50px;
+  height: 50px;    
+  position: absolute;
+  margin-left: 20px;
+  background-image: url('gallery.png');
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  }
+  .wikipedia {
+  width: 50px;
+  height: 50px;  
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 85px;
+  background-image: url('wiki.png');
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  }
+  .camera{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      margin-top: 85px;
+      margin-left: 100px;
+      background-image: url('cam.png');
+      background-size: stretch;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  .calender{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      margin-top: 85px;
+      margin-left: 180px;
+      background-image: url('calender.png');
+      background-size: cover;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  .notes{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      margin-top: 85px;
+      margin-left: 260px;
+      background-image: url('notes.png');
+      background-size: cover;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  .settings{
+      width: 50px;
+      height: 50px;    
+      position: absolute;
+      margin-left: 260px;
+      background-image: url('settings.png');
+      background-size: cover;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+
+  .text_editor{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #111;
+  }
+
+  .wiki-iframe{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .calendar-iframe{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .photoGallery{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #000;
+      overflow: auto;
+  }
+  .setting_screen{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: none;
+      border-radius: 5px;
+      background-color: #ffffff;
+      overflow: auto;
+  }
+  .option_tile{
+      width: 100%;
+      height: 8%;
+      font-size: 20px;
+      padding-top: 5%;
+      padding-left: 2.5%;
+      cursor: pointer;
+  }
+  .option_tile:hover{
+      background-color: #dcdcdc;
+  }
+  #photoFrame{
+      width: 100%; 
+      height:100%;
+      display: none;
+      background-color: #000;
+      margin-top: 300px;
+  }
+  .cam_screen {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #000;
+  }
+  #videoElement {
+      width: 100%;
+      height: 80%;
+  }
+  .capture_btn {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40%;
+  margin-top: 1%;
+}
+
+.capture_btn_details {
+  background-color: #746464;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.photoFrame{
+  display:none;
+  width:100%;
+  height: 100%;
+  background-color: #000;
+}
+
+#canvasElement{
+  background-color: red;
+  width: 100%;
+  margin-top: 60%;
+}
+#editor {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #saveButton {
+    padding: 10px 20px;
+    margin-left: 82%;
+    font-size: 16px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #saveButton:hover {
+    background-color: #0056b3;
+  }
+  
+
+.clock_widget{
+  margin-left:25%;
+  margin-top: 40px;
+  background-color: #000000;
+  height: 10%;
+  width: 50%;
+  display: none;
+  
+}
+.clock_background{
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock_timing {
+    position: absolute;
+    color: #000;
+    font-size: 40px;
+  }
